@@ -56,9 +56,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Encrypt">
-      <HintPath>..\Reference\Encrypt.dll</HintPath>
-    </Reference>
     <Reference Include="IrisSkin4">
       <HintPath>..\Reference\IrisSkin4.dll</HintPath>
     </Reference>
@@ -114,6 +111,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Encrypt\Encrypt.csproj">
+      <Project>{053c325c-8f48-459f-9b6b-0b2963bfc25b}</Project>
+      <Name>Encrypt</Name>
+    </ProjectReference>
     <ProjectReference Include="..\QRCodeLib\QRCodeLib.csproj">
       <Project>{E98126B2-AF17-4783-96B9-856D6744DCA3}</Project>
       <Name>QRCodeLib</Name>
